@@ -8,7 +8,9 @@ import (
 
 func ExampleBinaryStringToInt() {
 	r, _ := twiddlingbits.BinaryStringToInt("00101")
+
 	fmt.Println(r)
+	// Output: 5
 }
 
 func ExampleBinarySlice() {
@@ -16,5 +18,7 @@ func ExampleBinarySlice() {
 	bs := twiddlingbits.BinarySlice{bits}
 
 	r, _ := twiddlingbits.MakeInt(bs)
+
 	fmt.Println(r)
+	// Output: 9
 }
