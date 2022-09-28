@@ -1,12 +1,12 @@
 # twiddlingbits
 
-*This is a toy.* It's some binary-munging functionality I needed for $REASONS. I've made it into a tiny library and kept the name as `twiddlingbits` to discourage you from using this for production.
+*This is a toy.* It's some binary-munging functionality I needed for $REASONS. I've made it into a tiny library and kept the name as `twiddlingbits` to discourage you from using it for production.
 
 In Go, it's easy to go from an int to a string of the binary representation of that int, e.g.
 
 ```
 i := 7
-fmt.Sprintf("%b", i)
+fmt.Printf("%b\n", i) // "111"
 ```
 
 It's not super easy to go the other way, though. UNTIL NOW (cue sales music):
@@ -28,3 +28,4 @@ result, _ := MakeInt(bs.Bits) // 9
 ## TODO
 
 - switch from int to uint so we can have 64 bits.
+- add tests for BinarySlice.Validate()
